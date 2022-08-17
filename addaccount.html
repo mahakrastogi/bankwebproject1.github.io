@@ -1,0 +1,100 @@
+<html>
+ 
+<head>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<title>signup</title>
+<link href="addac.css" rel="stylesheet"type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+<style>
+#msg
+{
+visibility: hidden;
+min-width: 250px;
+background-color: yellow;
+color: #000;
+text-align: center;
+border-radius: 2px;
+padding:  16px;
+position:  fixed;
+z-index: 1;
+right: 30%;
+top: 30px;
+font-size: 17px;
+margin-right: 30px;
+}
+#msg.show
+{
+visibility: visible;
+-webkit-animation: fadein 0.5s,fadeout 0.5s 2.5s;
+animation: fadein 0.5s,fadeout 0.5s 2.5s;
+}
+@-webkit-keyframes fadein
+{
+from{top:0;opacity:0;}
+to{top:30px;opacity:1;}
+}
+@keyframes fadein
+{
+from{top:0;opacity:0;}
+to{top:30px;opacity:1;}
+}
+@-webkit-keyframes fadeout
+{
+from{top:30px;opacity:1;}
+to{top:0;opacity:0;}
+}
+@-keyframes fadeout
+{
+from{top:30px;opacity:1;}
+to{top:0;opacity:0;}
+}
+</style>
+
+</head>
+<body>
+
+<div class="bgimage">
+<div class ="menu">
+<div class ="leftmenu">
+<h4>State Bank Of India</h4>
+</div>
+<div class ="rightmenu">
+<ul>
+<li id= "firstlist"><a href="index.html">Home</a></li>
+<li><a href="signup.html" color:"white">New Account</a></li>
+<li><a href="transfer.html">Transfer</a></li>
+<li><a href="contactus.html">Debit</a></li>
+<li><a href="credit.html" color:"white">Credit</a></li>
+<li><a href="aboutus.html">Check Balance</a></li>
+<li><a href="contactus.html">Transaction History</a></li>
+<li><a href="reset.html">Change Password</a></li>
+<li><a href="index.html">Logout</a></li>
+</ul>
+</div>
+</div>
+<form action="addaccount"> 
+	<div class="signup" >
+	
+	<h2 style="color:#fff"><u>ADD Account</u></h2><br>
+	<input type ="text" name ="name" placeholder="FirstName"><br>
+	<input type ="text" name ="adharno" placeholder="Adhar no."><br>
+	<input type ="text" name ="mobileno" placeholder="Mobile no."><br>
+	<input type ="text" name ="emailname" placeholder="EmailAddresss"><br>
+	<input type ="text" name ="fathername" placeholder="Father Name"><br>
+	<input type ="text" name ="accounttype" placeholder="Account Type"><br>
+	<input type ="text" name ="balanceno" placeholder="Balance No"><br>
+	<input type ="text" name ="gendername" placeholder="Gender Name"><br><br>
+	<input type ="submit" value="Add new Account" ><br><br>
+	
+	
+	
+	</div>
+	</form>
+</div>
+
+
+
+</body>
+
+</html>
